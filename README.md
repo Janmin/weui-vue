@@ -42,4 +42,4 @@ https://github.com/Janmin/weui-vue/issues
 > 业余时间开发的组件库，存在的不足之处还请谅解，下面会持续的进行更新。
 在此感谢腾讯的WeUi，以及@adcentury童鞋的vue-weui(Deprecated)在开发weui-vue过程中的启示和帮助！
 
-  [1]: http://pic.zijian92.cn/o_1buhs2n5gikc1phlnte1nc3138pa.png
+  [1]: https://github.com/Janmin/weui-vue/blob/master/image/qrcode.png?raw=true
