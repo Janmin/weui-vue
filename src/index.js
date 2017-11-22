@@ -68,6 +68,13 @@ import SearchBar from './search-bar/SearchBar.vue'
 import Flex from './flex/Flex.vue'
 import FlexItem from './flex/FlexItem.vue'
 
+import Gallery from './gallery/Gallery.vue'
+import GalleryButton from './gallery/GalleryButton.vue'
+
+import Footer from './footer/Footer.vue'
+
+import Badge from './badge/Badge.vue'
+
 const components = [
   ButtonArea,
   Button,
@@ -119,8 +126,12 @@ const components = [
   MediaInfoMeta,
   SearchBar,
   Flex,
-  FlexItem
-];
+  FlexItem,
+  Gallery,
+  GalleryButton,
+  Footer,
+  Badge
+]
 
 const install = function (Vue, opts = {}) {
   components.map(component => {
@@ -184,5 +195,9 @@ export default {
   MediaInfoMeta,
   SearchBar,
   Flex,
-  FlexItem
+  FlexItem,
+  Gallery,
+  GalleryButton,
+  Footer,
+  Badge
 }

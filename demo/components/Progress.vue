@@ -7,7 +7,7 @@
     <div class="page__bd">
       <wv-progress :progress="0" :hasCancelButton="hasCancelButton"></wv-progress>
       <br>
-      <wv-progress :progress="50" :hasCancelButton="hasCancelButton"></wv-progress>
+      <wv-progress :progress="50" :hasCancelButton="hasNoCancelButton"></wv-progress>
       <br>
       <wv-progress :progress="80" :hasCancelButton="hasCancelButton" @wv-progress-cancel="test"></wv-progress>
     </div>
@@ -18,7 +18,8 @@
   export default {
     data() {
       return {
-        hasCancelButton: true
+        hasCancelButton: true,
+        hasNoCancelButton: false
       }
     },
     methods: {

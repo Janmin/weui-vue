@@ -13,9 +13,6 @@
   export default {
     name: 'wv-progress',
     props: {
-      /**
-       * 进度，最小为0，最大为100
-       */
       progress: {
         type: Number,
         required: true,
@@ -24,9 +21,6 @@
         },
         default: 0
       },
-      /**
-       * 是否包含取消按钮，若有，则点击时会出发weui-progress-cancel事件
-       */
       hasCancelButton: {
         type: Boolean,
         required: false,

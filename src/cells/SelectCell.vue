@@ -12,16 +12,11 @@
 </template>
 
 <script>
-  // import CellHeader from './Cellheader.vue';
-  // import CellBody from './Cellbody.vue';
-  // import CellFooter from './CellFooter.vue';
-  // import CellSelect from './CellSelect.vue';
-
   export default {
     name: 'wv-select-cell',
     data() {
       return {
-        mySelected: this.selected
+        mySelected: this.value
       }
     },
     props: {
@@ -38,10 +33,9 @@
       /**
        * 选中项数据绑定，会用于select的v-model
        */
-      selected: {
+      value: {
         type: null,
-        required: true,
-        twoWay: true
+        required: false
       },
 
       /**
@@ -64,15 +58,9 @@
     },
     watch: {
       mySelected(val) {
-        this.$emit("update:selected", val)
+        this.$emit("input", val)
       }
-    },
-    // components: {
-    //   CellHeader,
-    //   CellBody,
-    //   CellFooter,
-    //   CellSelect
-    // }
+    }
   }
 
 </script>

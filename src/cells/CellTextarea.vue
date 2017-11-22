@@ -22,7 +22,7 @@
         this.myValue = val
       },
       myValue(val) {
-        this.$emit("update:value", val)
+        this.$emit("input", val)
       }
     },
     computed: {

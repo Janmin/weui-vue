@@ -13,16 +13,7 @@
 </template>
 
 <script>
-  // import CellHeader from './CellHeader.vue'
-  // import CellBody from './CellBody.vue'
-  // import CellFooter from './CellFooter.vue'
-
   export default {
-    name: 'wv-cell',
-    // components: {
-    //   CellHeader,
-    //   CellBody,
-    //   CellFooter
-    // }
-  };
+    name: 'wv-cell'
+  }
 </script>

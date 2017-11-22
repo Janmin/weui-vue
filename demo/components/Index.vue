@@ -1,8 +1,8 @@
 <template>
-  <div>
+  <div class="page">
     <div class="page__hd">
       <div class="logo">
-        <img src="http://pic.zijian92.cn/logo.png" style="width:88px;">
+        <img src="http://img.buzhizhe.cn/logo.png" style="width:88px;">
       </div>
       <h1 class="page_title">
       </h1>
@@ -22,6 +22,9 @@
         <wv-grid to="panel" :imageUrl="imageUrl10" label="Panel" />
         <wv-grid to="bar" :imageUrl="imageUrl11" label="Tab" />
         <wv-grid to="search" :imageUrl="imageUrl12" label="SearchBar" />
+        <wv-grid to="flex" :imageUrl="imageUrl12" label="Flex" />
+        <wv-grid to="gallery" :imageUrl="imageUrl12" label="Gallery" />
+        <wv-grid to="footer" :imageUrl="imageUrl12" label="Footer" />
       </wv-grids>
     </div>
   </div>
@@ -32,18 +35,18 @@
     data() {
       return {
         to: '',
-        imageUrl1: 'http://pic.zijian92.cn/icon_nav_button.png',
-        imageUrl2: 'http://pic.zijian92.cn/icon_nav_cell.png',
-        imageUrl3: 'http://pic.zijian92.cn/icon_nav_toast.png',
-        imageUrl4: 'http://pic.zijian92.cn/icon_nav_dialog.png',
-        imageUrl5: 'http://pic.zijian92.cn/icon_nav_progress.png',
-        imageUrl6: 'http://pic.zijian92.cn/icon_nav_msg.png',
-        imageUrl7: 'http://pic.zijian92.cn/icon_nav_article.png',
-        imageUrl8: 'http://pic.zijian92.cn/icon_nav_actionSheet.png',
-        imageUrl9: 'http://pic.zijian92.cn/icon_nav_icons.png',
-        imageUrl10: 'http://pic.zijian92.cn/icon_nav_panel.png',
-        imageUrl11: 'http://pic.zijian92.cn/icon_nav_tab.png',
-        imageUrl12: 'http://pic.zijian92.cn/icon_nav_search_bar.png',
+        imageUrl1: 'http://img.buzhizhe.cn/icon_nav_button.png',
+        imageUrl2: 'http://img.buzhizhe.cn/icon_nav_cell.png',
+        imageUrl3: 'http://img.buzhizhe.cn/icon_nav_toast.png',
+        imageUrl4: 'http://img.buzhizhe.cn/icon_nav_dialog.png',
+        imageUrl5: 'http://img.buzhizhe.cn/icon_nav_progress.png',
+        imageUrl6: 'http://img.buzhizhe.cn/icon_nav_msg.png',
+        imageUrl7: 'http://img.buzhizhe.cn/icon_nav_article.png',
+        imageUrl8: 'http://img.buzhizhe.cn/icon_nav_actionSheet.png',
+        imageUrl9: 'http://img.buzhizhe.cn/icon_nav_icons.png',
+        imageUrl10: 'http://img.buzhizhe.cn/icon_nav_panel.png',
+        imageUrl11: 'http://img.buzhizhe.cn/icon_nav_tab.png',
+        imageUrl12: 'http://img.buzhizhe.cn/icon_nav_search_bar.png',
       }
     }
   }

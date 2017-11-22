@@ -1,7 +1,7 @@
 <template>
   <label :for="id" class="weui-cell weui-check__label">
     <wv-cell-header>
-      <input type="checkbox" :name="name" class="weui-check" :id="id" :value="value">
+      <input type="checkbox" :name="name" class="weui-check" :id="id" v-model="myValue">
       <span class="weui-icon-checked"></span>
     </wv-cell-header>
     <wv-cell-body>{{label}}</wv-cell-body>
@@ -9,11 +9,18 @@
 </template>
 
 <script>
-  // import CellHeader from './CellHeader.vue';
-  // import CellBody from './CellBody.vue';
-
   export default {
     name: 'wv-checkbox-cell',
+    data() {
+      return {
+        myValue: this.value
+      }
+    },
+    watch: {
+      myValue(val) {
+        this.$emit('input', val)
+      }
+    },
     props: {
       /**
        * checkbox input的id
@@ -35,7 +42,7 @@
        * checkbox input的value
        */
       value: {
-        type: String,
+        type: null,
         required: false
       },
 
@@ -46,11 +53,6 @@
         type: String,
         required: true
       }
-    },
-
-    // components: {
-    //   CellHeader,
-    //   CellBody
-    // }
+    }
   }
 </script>

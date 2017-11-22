@@ -3,7 +3,8 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-import WeuiVue from 'weui-vue'
+// import WeuiVue from 'weui-vue'
+import WeuiVue from '../dist/weui-vue/weui-vue'
 import 'weui-vue/weui.css'
 
 Vue.config.productionTip = false

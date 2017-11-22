@@ -16,6 +16,10 @@ import Tabbar from '@/components/Tabbar'
 import Navbar from '@/components/Navbar'
 import SearchBar from '@/components/SearchBar'
 import Bar from '@/components/Bar'
+import Flex from '@/components/Flex'
+import Gallery from '@/components/Gallery'
+import Footer from '@/components/Footer'
+import Badge from '@/components/Badge'
 
 Vue.use(Router)
 
@@ -100,6 +104,26 @@ export default new Router({
       path: '/bar',
       name: 'Bar',
       component: Bar
+    },
+    {
+      path: '/flex',
+      name: 'Flex',
+      component: Flex
+    },
+    {
+      path: '/gallery',
+      name: 'Gallery',
+      component: Gallery
+    },
+    {
+      path: '/footer',
+      name: 'Footer',
+      component: Footer
+    },
+    {
+      path: '/badge',
+      name: 'Badge',
+      component: Badge
     }
   ]
 })

@@ -11,18 +11,14 @@
       }
     },
     watch: {
-      value(val) {
-        this.myValue = val
-      },
       myValue(val) {
-        this.$emit("update:value", val)
+        this.$emit("input", val)
       }
     },
     props: {
       value: {
-        type: String,
-        required: false,
-        twoWay: true
+        type: null,
+        required: false
       },
       type: {
         type: String,
