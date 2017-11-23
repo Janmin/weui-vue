@@ -5,8 +5,8 @@
       <p class="page_desc">基于WeUI设计的Vue.js组件库</p>
     </div>
     <div class="page__bd">
-      <wv-button type="default" @click.native="showToast">点击弹出Toast</wv-button>
-      <wv-button type="default" @click.native="showLoadingToast">点击弹出Loading Toast</wv-button>
+      <wv-button type="default" @click="showToast">点击弹出Toast</wv-button>
+      <wv-button type="default" @click="showLoadingToast">点击弹出Loading Toast</wv-button>
     </div>
     <wv-toast v-show="toastShow">
       完成

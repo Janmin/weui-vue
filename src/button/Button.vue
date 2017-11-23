@@ -1,5 +1,6 @@
 <template>
   <button class="weui-btn" :class="[typeClass, disabledClass, mini ? 'weui-btn_mini' : '']" @click="clickHandler($event)">
+    <slot></slot>
   </button>
 </template>
 

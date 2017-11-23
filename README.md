@@ -29,6 +29,9 @@ import 'weui-vue/weui.css'
 ```
 ## 组件列表
 
+https://blog.buzhizhe.cn/index.php/category/wv/
+正在更新中，没有提到的问题请直接提issue ☺
+
 ## 示例
 ```bash
 git clone https://github.com/Janmin/weui-vue.git
