@@ -1,6 +1,9 @@
 <template>
   <div class="">
-    <wv-action-sheet :show="actionsheetShow" :menus="actionSheetMenus" :actions="actionSheetActions" :title="title" @wv-menu-click="onEvent"></wv-action-sheet>
+    <div class="page__bd">
+      <wv-button type="primary" @click="_click()">显示actionsheet</wv-button>
+    </div>
+    <wv-action-sheet v-model="actionsheetShow" :menus="actionSheetMenus" :actions="actionSheetActions" :title="title" @wv-menu-click="onEvent"></wv-action-sheet>
   </div>
 </template>
 
@@ -25,6 +28,10 @@
     methods: {
       onEvent(message) {
         console.log(message)
+      },
+      _click() {
+        var _this = this
+        _this.actionsheetShow = true
       }
     }
   }

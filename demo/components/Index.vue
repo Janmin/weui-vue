@@ -48,6 +48,9 @@
         imageUrl10: 'http://img.buzhizhe.cn/icon_nav_panel.png',
         imageUrl11: 'http://img.buzhizhe.cn/icon_nav_tab.png',
         imageUrl12: 'http://img.buzhizhe.cn/icon_nav_search_bar.png',
+        imageUrl13: 'http://img.buzhizhe.cn/o_1c17jj7c5a932gd8rhn718oca.png',
+        imageUrl14: '',
+        imageUrl15: ''
       }
     }
   }

@@ -1,5 +1,6 @@
 <template>
   <div class="">
+    <input type="text" :value="value" style="display:none;">
     <div class="weui-mask" :class="{'weui_fade_toggle': isShow}" :style="{opacity: isShow ? '1':'0',display: isShow ? 'block' : 'none'}"
       @click="hideActionSheet"></div>
     <div class="weui-actionsheet" :class="{'weui-actionsheet_toggle': isShow}">
@@ -23,7 +24,7 @@
 <script>
   export default {
     name: 'wv-action-sheet',
-    data () {
+    data() {
       return {
         isShow: Boolean
       }
@@ -32,7 +33,7 @@
       /**
        * 双向绑定的数据，用于控制是否显示Actionsheet
        */
-      show: {
+      value: {
         type: Boolean,
         required: true,
         twoWay: true
@@ -60,9 +61,19 @@
         default: {}
       }
     },
-    mounted () {
-      var _this = this
-      _this.isShow = _this.show
+    watch: {
+      value(val) {
+        var _this = this
+        _this.isShow = val
+      },
+      isShow(val) {
+        this.$emit('input', val)
+      }
+    },
+    mounted() {
+      if (this.value) {
+        this.isShow = true
+      }
     },
     methods: {
       callEvent(event, message) {
@@ -74,7 +85,7 @@
       },
       hideActionSheet() {
         var _this = this
-        _this.isShow = false;
+        _this.isShow = false
       }
     }
   }
