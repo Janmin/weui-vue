@@ -70,11 +70,6 @@
         this.$emit('input', val)
       }
     },
-    mounted() {
-      if (this.value) {
-        this.isShow = true
-      }
-    },
     methods: {
       callEvent(event, message) {
         var _this = this
